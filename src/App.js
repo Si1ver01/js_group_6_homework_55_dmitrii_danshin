@@ -16,8 +16,7 @@ class App extends Component {
   };
 
   addIngridient = name => {
-    const ingridients = [...this.state.ingridients,name];
-    this.setState({ ingridients });
+    this.setState(prevState => prevState.ingridients.push(name))
   };
 
   removeIngridient = name => {

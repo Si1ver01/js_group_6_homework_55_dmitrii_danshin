@@ -5,10 +5,7 @@ const capitalize = ([first, ...rest]) =>
 
 const BurgerItem = ({name}) => {
   const classForToping = capitalize(name);
-
-  return (
-    <div className={classForToping}></div>
-  )
+  return <div className={classForToping}></div>
 }
 
 export default BurgerItem
